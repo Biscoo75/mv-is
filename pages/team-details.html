@@ -514,6 +514,36 @@
     <script src="../common/js/common_script.js"></script>
     <!--====== Main js ======-->
     <script src="assets/js/theme.js"></script>
+    <script>
+        window.addEventListener('scroll', function () {
+            if (window.innerWidth >= 992) {
+                const header = document.getElementById('stickyHeader');
+                if (window.scrollY > 100) {
+                    header.style.position = 'fixed';
+                    header.style.top = '45px';
+                    header.style.left = '0';
+                    header.style.right = '0';
+                    header.style.zIndex = '1000';
+                } else {
+                    header.style.position = 'relative';
+                    header.style.top = 'auto';
+                }
+            }
+            else {
+                const header = document.getElementById('stickyHeader');
+                if (window.scrollY > 100) {
+                    header.style.position = 'fixed';
+                    header.style.top = '5px';
+                    header.style.left = '0';
+                    header.style.right = '0';
+                    header.style.zIndex = '1000';
+                } else {
+                    header.style.position = 'relative';
+                    header.style.top = 'auto';
+                }
+            }
+        });
+    </script>
 </body>
 
 </html>
