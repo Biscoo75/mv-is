@@ -1262,7 +1262,7 @@ Version: 1.0
 }
 .team-details-page .team-details-wrapper .member-info-content .contact-wrapper {
   padding: 40px 50px;
-  background-color: #FEEEED;
+  background-color: #eff9ffb5;
   border-radius: 7px;
 }
 @media (max-width: 767px) {
@@ -1962,7 +1962,7 @@ Version: 1.0
 /* Contact Page css */
 .contact-ss .sasly-iconic-box {
   padding: 50px 50px 40px;
-  background-color: #FEEEED;
+  background-color: #eff9ffb5;
   border-radius: 10px;
 }
 @media screen and (max-width: 991px) {

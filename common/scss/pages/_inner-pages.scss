@@ -544,7 +544,7 @@ Version: 1.0
     & .contact-wrapper{
         border: 1px solid rgba(31, 31, 31, 0.10);
         padding: 40px 60px 50px;
-        background-color: #FEEEED;
+        background-color: #eff9ffb5;
         border-radius: 10px;
         @include respond(xm){
             padding: 40px 30px 50px;
@@ -1168,7 +1168,7 @@ Version: 1.0
             }
             & .contact-wrapper{
                 padding: 40px 50px;
-                background-color: #FEEEED;
+                background-color: #eff9ffb5;
                 border-radius: 7px;
                 @include respond(phone){
                     padding: 30px 20px;
@@ -1889,7 +1889,7 @@ Version: 1.0
 .contact-ss{
     & .sasly-iconic-box{
         padding: 50px 50px 40px;
-        background-color: #FEEEED;
+        background-color: #eff9ffb5;
         border-radius: 10px;
         @include respond (xm){
             padding: 50px 30px 40px;

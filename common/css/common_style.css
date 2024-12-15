@@ -344,7 +344,7 @@ label {
   font-weight: 600;
   color: var(--heading-color);
   margin-bottom: 15px;
-  background-color: #FEEEED;
+  background-color: #eff9ffb5;
 }
 .sub-heading i {
   -webkit-transform: rotate(-45deg);
