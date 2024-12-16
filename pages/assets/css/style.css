@@ -1337,7 +1337,7 @@ h4 {
 }
 .blog-standard-ss .blog-quote-post-item {
   padding: 40px;
-  background-color: rgb(254, 238, 237);
+  background-color: rgba(239, 249, 255,0.71);
 }
 .blog-standard-ss .blog-quote-post-item .post-content h4.title {
   font-size: 30px;
@@ -2799,4 +2799,13 @@ h4 {
   font-size: 16px;
   font-weight: 700;
   padding: 22px 50px;
+}
+/* Pricing Page */
+.pricing-page-ss .sasly-image-box img {
+  border-radius: 7px;
+}
+
+.blueBg
+{
+  background-color: #0d6bb3 !important;
 }

@@ -358,7 +358,7 @@ Version: 1.0
 }
 .blog-standard-ss .blog-quote-post-item {
   padding: 40px;
-  background-color: rgb(254, 238, 237);
+  background-color: rgba(239, 249, 255,0.71);
 }
 .blog-standard-ss .blog-quote-post-item .post-content h4.title {
   font-size: 30px;

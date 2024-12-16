@@ -2855,7 +2855,7 @@ label {
   padding: 50px 70px 40px;
   border-radius: 10px;
   border: 1px rgba(241, 79, 68, 0.1);
-  background-color: rgba(241, 79, 68, 0.102);
+  background-color: rgba(239, 249, 255,0.71);
   z-index: 1;
 }
 @media (max-width: 767px) {
