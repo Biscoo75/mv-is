@@ -38,6 +38,8 @@
     <link rel="stylesheet" href="../common/css/common_style.css">
     <!--====== Style css ======-->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css">
+
 </head>
 
 <body>
@@ -227,10 +229,10 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="page-content text-center">
-                                    <h1 class="page-title">Business Consulting</h1>
+                                    <h1 class="page-title">Service Details</h1>
                                     <ul class="breadcrumb-link">
                                         <li><a href="../home-business/index.html">Home</a></li>
-                                        <li class="active">Business Consulting</li>
+                                        <li class="active">Service Details</li>
                                     </ul>
                                 </div>
                             </div>
@@ -312,7 +314,7 @@
                                             <h4 class="widget-title">Services Category</h4>
                                             <div class="widget-content">
                                                 <ul>
-                                                    <li><a href="#">Business Consulting <span><i
+                                                    <li><a href="#">Service Details <span><i
                                                                     class="far fa-angle-right"></i></span></a></li>
                                                     <li><a href="#">Digital Marketing <span><i
                                                                     class="far fa-angle-right"></i></span></a></li>
@@ -340,6 +342,10 @@
                                                 <div class="form-group">
                                                     <input type="email" placeholder="Email Address" class="form_control"
                                                         name="email" required>
+                                                </div>
+                                                <div class="form-group mb-3">
+                                                    <input type="tel" placeholder="Phone" class="form_control ps-5 "
+                                                        name="email" required id="mobile">
                                                 </div>
                                                 <div class="form-group">
                                                     <textarea placeholder="Message" class="form_control" name="message"
@@ -421,8 +427,8 @@
                                                     <!-- <li>
                                                         <a href="#">404</a>
                                                     </li> -->
-                                                    <li>
-                                                        <a href="#">Career</a>
+                                                       <li>
+                                                        <a href="./careers.html">Career</a>
                                                     </li>
                                                     <li>
                                                         <a href="#">Offers</a>
@@ -483,11 +489,10 @@
                             <div class="col-lg-6">
                                 <div class="copyright-nav">
                                     <ul>
-                                        <li><a href="blog-grid.html">Blog</a></li>
-                                        <li><a href="faqs.html">FAQ</a></li>
-                                        <li><a href="#">Career</a></li>
-                                        <li><a href="#">Offers</a></li>
-                                        <li><a href="./404.html">404</a></li>
+                                            <li><a href="faqs.html">FAQ</a></li>
+                                        <li><a href="./404.html">Privacy Policy</a></li>
+                                        <li><a href="./404.html">Terms and Conditions</a></li>
+                                        <li><a href="">2007-2024</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -520,6 +525,23 @@
     <script src="../common/js/plugins/aos.js"></script>
     <!--====== Main js ======-->
     <script src="../common/js/common_script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js"></script>
+    <script src="https://unpkg.com/dropzone@5/dist/min/dropzone.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/es6-shim/0.35.3/es6-shim.min.js"></script>
+    <script>
+        // Initialize the intlTelInput instance
+        var input1 = document.querySelector("#mobile");
+        var iti1 = window.intlTelInput(input1, {
+            initialCountry: "auto"
+            , geoIpLookup: callback => {
+                fetch("https://ipapi.co/json")
+                    .then(res => res.json())
+                    .then(data => callback(data.country_code))
+                    .catch(() => callback("us"));
+            }
+            ,
+        });
+    </script>
     <!--====== Main js ======-->
     <script src="assets/js/theme.js"></script>
     <script>
