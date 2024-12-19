@@ -3303,3 +3303,12 @@ html[dir="rtl"] .theme-btn i
   margin-left: 0;
   transform: scaleX(-1);
 }
+html[dir="rtl"] .project-details-ss .project-thumbnail .thumbnail .project-info-box
+{
+  right: auto;
+  left: 30px;
+}
+html[dir="rtl"] .project-details-ss .project-thumbnail .thumbnail .project-info-box ul li span.info
+{
+  float: left;
+}
